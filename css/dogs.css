@@ -1,0 +1,82 @@
+body{
+  font-family: "Montserrat";
+  background-color: #003459 !important;
+}
+#dogs{
+  background-color: #003459;
+  color: white;
+
+}
+#title {
+  background-color: #003459;
+  color: #FCE38A;
+}
+#title a {
+  background-color: #003459;
+  color: #FCE38A;
+}
+.col{
+  color: #FCE38A;
+}
+h1 {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.navbar{
+  padding: 0 0 4.5rem;
+}
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+.download-button{
+  margin: 5% 3% 5% 0%;
+}
+.title-image img{
+  width: 60%;
+  transform: rotate(-25deg);
+}
+
+#features{
+  margin: 5%;
+}
+
+.card-title {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.spantext{
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+}
+.card-text{
+  color: #8f8f8f;
+}
+
+.fas{
+  color: #028090;
+}
+
+.fas:hover{
+  color: #003459;
+}
+.row-margin-10 { margin-top: 1.0em; }
+.img-thumbnail{
+  background-color: #003459 !important;
+  border-radius: 20% !important;
+}
