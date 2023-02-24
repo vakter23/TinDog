@@ -36,7 +36,7 @@
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Download</a>
+            <button class="nav-link" id="black-theme" href="">Black Mode</button>
           </li>
         </ul>
       </div>
@@ -98,6 +98,28 @@
     </div>
 
   </section>
+<script>
+document.getElementById('black-theme').addEventListener('click', function(){
+  if(this.innerHTML=="Black Mode"){
+    var el = document.querySelectorAll('*');
+    for(var i=0;i<el.length;i++){
+      if(el[i].id!="black-theme"){
+        el[i].classList.add("dark-mode");
+      }
+    }
+    this.innerHTML='Basic Mode';
+  }
+  else{
+    var el = document.querySelectorAll('*');
+    for(var i=0;i<el.length;i++){
+      if(el[i].id!="black-theme"){
+        el[i].classList.remove("dark-mode");
+      }
+    }
+    this.innerHTML='Black Mode';
+  }
+});
 
+</script>
 </body>
 </html>

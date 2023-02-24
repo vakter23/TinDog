@@ -80,3 +80,7 @@ h1 {
   background-color: #003459 !important;
   border-radius: 20% !important;
 }
+.dark-mode {
+  background-color: black !important;
+  color: white !important;
+}

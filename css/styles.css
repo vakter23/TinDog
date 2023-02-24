@@ -2,6 +2,9 @@ body{
   font-family: "Montserrat";
 
 }
+body.dark {
+  background-color: #292c35;
+}
 
 #title {
   background-color: #003459;
@@ -74,4 +77,9 @@ h1 {
 
 .fas:hover{
   color: #003459;
+}
+
+.dark-mode {
+  background-color: black !important;
+  color: white !important;
 }
