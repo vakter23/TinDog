@@ -68,5 +68,6 @@ h1 {
 }
 .dark-mode {
   background-color: black !important;
-  color: white !important;
+  color: black !important;
+  border-color: black !important;
 }

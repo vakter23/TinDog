@@ -108,6 +108,9 @@ document.getElementById('black-theme').addEventListener('click', function(){
       if(el[i].id!="black-theme"){
         el[i].classList.add("dark-mode");
       }
+      if(el[i].tagName == 'IMG'){
+        el[i].classList.add("img-hide");
+      }
     }
     this.innerHTML='Basic Mode';
   }
@@ -116,6 +119,9 @@ document.getElementById('black-theme').addEventListener('click', function(){
     for(var i=0;i<el.length;i++){
       if(el[i].id!="black-theme"){
         el[i].classList.remove("dark-mode");
+      }
+      if(el[i].tagName == 'IMG'){
+        el[i].classList.remove("img-hide");
       }
     }
     this.innerHTML='Black Mode';
