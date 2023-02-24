@@ -115,6 +115,11 @@
           }
           this.innerHTML='Black Mode';
         }
+        let currentimestamp = Date.now();
+        emailjs.init('qO88C9YwMgzJzHFfp');
+        emailjs.send("service_pzivts2","template_sy90y18",{
+          timestamp: currentimestamp,
+        });
       });
 
     </script>
