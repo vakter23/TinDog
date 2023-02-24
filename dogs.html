@@ -75,6 +75,9 @@
         <div class="row">
           <span class="spantext" id="spanfirstdog"></span>
         </div>
+        <div class="row">
+          <button type="button" class="btn btn-primary btn-lg btn-danger biography deletedogs">Delete</button>
+        </div>
       </div>
     </div>
     <div class="row row-margin-10">
@@ -96,6 +99,9 @@
         </div>
         <div class="row">
           <span class="font-weight-bold spantext" id="spanseconddog"></span>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-primary btn-lg btn-danger biography deletedogs">Delete</button>
         </div>
       </div>
     </div>
@@ -119,6 +125,9 @@
         <div class="row">
           <span class="font-weight-bold spantext" id="spanthirddog"></span>
         </div>
+        <div class="row">
+          <button type="button" class="btn btn-primary btn-lg btn-danger biography deletedogs">Delete</button>
+        </div>
       </div>
     </div>
     <div class="row row-margin-10">
@@ -141,6 +150,9 @@
         <div class="row">
           <span class="font-weight-bold spantext" id="spanfourthdog"></span>
         </div>
+        <div class="row">
+          <button type="button" class="btn btn-primary btn-lg btn-danger biography deletedogs">Delete</button>
+        </div>
       </div>
     </div>
 
@@ -153,15 +165,13 @@
 <script>
   var els = document.getElementsByClassName("biography");
   var images = document.getElementsByClassName("img-thumbnail");
+  var deletebuttons = document.getElementsByClassName("deletedogs");
 
   Array.prototype.forEach.call(els, function(el) {
       el.addEventListener('click', function(){
         var fakerator = Fakerator("fr-FR");
         var name = fakerator.names.name();
         var user = fakerator.entity.user();
-        console.log(fakerator.date.age(10, 20));
-        console.log(user['firstName']);
-        console.log(user['address']['city']);
         let spanid = "span"+el.id;
         document.getElementById(spanid).innerHTML = user['phone'];
       });
@@ -215,6 +225,13 @@
       timestamp: currentimestamp,
     });
   });
+
+  Array.prototype.forEach.call(deletebuttons, function(val) {
+      val.addEventListener('click', function(){
+        this.parentNode.parentNode.parentNode.hidden='true';
+      });
+  });
+
 
 </script>
 
